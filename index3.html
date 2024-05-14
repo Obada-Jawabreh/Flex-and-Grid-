@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows:repeat(12,1fr) ;
+            width: 500px;
+            height: 300px;
+            background-color: #BEE4F1;
+            gap: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            margin: auto;
+            margin-top: 60px;
+                }
+        .head{
+            grid-row:1/3;
+            grid-column:1/-1;
+            background-color: #02B9AB;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .aside{
+            grid-row:3/11;
+            grid-column: 1/3;
+            background-color: #6BD46B;
+            text-align: center;
+            padding-top: 60px;
+        }
+        .artical{
+            grid-row: 3/11;
+            grid-column: 3 / span 4;
+            background-color: #F3AA4A;
+            display: flex;
+            justify-content: center ;
+            justify-content: space-around ;
+            /* justify-content:flex-start ; */
+            /* flex-wrap: wrap; */
+            /* align-items: flex-end; */
+            
+        }
+        .artical .art  {
+            width: 80px;
+            height: 80px;
+            background-color: #F4CB48;
+            margin:b;
+        }
+        .artical .text{
+            align-self: center;
+            justify-self: flex-end;
+        }
+        .artical .art {
+        align-self: flex-end;
+        }
+        .footer{
+            grid-row:11/13;
+            grid-column:-7/-1;
+            background-color:#02B9AB ;
+            text-align: center;
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="head">Header</div>
+        <div class="aside">Aside</div>
+        <div class="artical"><div class="text">
+            <div class="text">artical</div>
+        </div>
+            <div class="art"><img src="" alt="images" class="a"></div>
+            <div class="art"><img src="" alt="images"></div>
+            <div class="art"><img src="" alt="images"></div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

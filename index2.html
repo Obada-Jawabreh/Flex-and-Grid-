@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(3,1fr) ;
+            grid-template-rows:repeat(12,1fr) ;
+            gap: 3px;
+            width:1000px;
+            height: 600px;
+            margin:auto ;
+            margin-top: 10%;
+            }
+            .d1{
+                grid-column: 1/-1;
+                text-align: center;
+                background-color: #62eb55;
+                padding-top: 10px;
+            }
+            .d2{
+            text-align: center;
+            grid-row:2/4 ;
+            background-color:#D5C9E2;
+            padding-top: 10px;
+            }
+            .d3{
+                grid-column:2/4;
+                grid-row: 2/5;
+                background-color:#B59F5F;
+                text-align: center;
+                padding-top: 10px;
+            }
+            .d5{
+                background-color:#495A2A;
+                grid-row:4/7;
+                text-align: center;
+                padding-top: 10px;
+            }
+            .d4{
+                 grid-column: 2/-1;
+                 background-color:#A4B092;
+                 grid-row:5/7;
+                 text-align: center;
+                 padding-top: 10px;
+            }
+            .d6{
+                grid-column: 1/3;
+                background-color: #2B81B6;
+                grid-row:7/9;
+                text-align: center;
+                padding-top: 10px;
+            }
+            .d7{
+                background-color: #C6487D;
+                grid-row:7/9;
+                text-align: center;
+                padding-top: 10px;
+
+            }
+            .d8{
+                background-color: #0008FF;
+                grid-row:9/10 ;
+                grid-column: 1/-1;
+                text-align: center;
+                padding-top: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="d1">section 1</div>
+        <div class="d2">section 2</div>
+        <div class="d3">Main content
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores autem debitis commodi blanditiis iste magnam consequatur rerum cum, labore repellendus delectus animi, voluptatum quibusdam cumque aliquid ut. Enim, cum veritatis.</p>
+        </div>
+        <div class="d4">Extar content </div>
+        <div class="d5">section 3</div>
+        <div class="d6">related images</div>
+        <div class="d7">Related posts</div>
+        <div class="d8">Footer</div>        
+
+    </div>
+</body>
+</html>
